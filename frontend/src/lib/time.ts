@@ -40,3 +40,17 @@ export function formatFollowUp(iso: string, now = new Date()): string {
 
 /** Value from <input type="datetime-local"> -> UTC ISO string */
 export const localInputToIso = (v: string) => new Date(v).toISOString();
+
+/** Date -> value for <input type="datetime-local"> in local time */
+export function toLocalInput(d: Date): string {
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+
+/** 10:00 local, `days` from now */
+export function atTenAm(days: number, now = new Date()): string {
+  const d = new Date(now);
+  d.setDate(d.getDate() + days);
+  d.setHours(10, 0, 0, 0);
+  return toLocalInput(d);
+}
