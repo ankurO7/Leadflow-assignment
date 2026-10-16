@@ -103,4 +103,25 @@ What was not verified by the AI: the Docker Compose setup and the UI in a real b
 
 ## Screenshots
 
-Add screenshots / a screen recording of the flow here (list, dialog, add lead).
+**1. Lead list.** Today's follow-ups are pinned; overdue ones are red.
+![Lead List](image-1.png)
+
+
+**2. Filter by status and search by name**
+![Filter and Search](image-2.png)
+
+**3. Add a lead**
+![Add Lead](image-3.png)
+![List after Adding](image-4.png)
+
+**4. Lead timeline dialog**
+![Lead Timeline](image-5.png)
+
+**5. Add a note with a follow-up. The list updates immediately.**
+![Note Saved](image-6.png)
+![List Updated](image-7.png)
+
+**6. Change status from the dialog**
+![Status Change](image-8.png)
+![Status Changed](image-9.png)
+![Final List](image-10.png)
